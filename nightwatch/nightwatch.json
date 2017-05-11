@@ -2,7 +2,7 @@
   "src_folders": ["./nightwatch/tests"],
   "output_folder": "./nightwatch/reports",
   "custom_commands_path": "",
-  "page_objects_path": "",
+  "page_objects_path": "./nightwatch/page-objects",
   "custom_assertions_path": "",
   "globals_path": "",
   "live_output": true,
