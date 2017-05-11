@@ -7,7 +7,8 @@
     "selenium-install": "node_modules/.bin/selenium-standalone install",
     "selenium": "node_modules/.bin/selenium-standalone start",
     "nightwatch-chrome": "node_modules/.bin/nightwatch --config ./nightwatch/nightwatch.conf.js",
-    "nightwatch-firefox": "node_modules/.bin/nightwatch --config ./nightwatch/nightwatch.conf.js --env firefox"
+    "nightwatch-firefox": "node_modules/.bin/nightwatch --config ./nightwatch/nightwatch.conf.js -e firefox",
+    "nightwatch-chrome-firefox": "node_modules/.bin/nightwatch --config ./nightwatch/nightwatch.conf.js -e default,firefox"
   },
   "dependencies": {
     "nightwatch": "^0.9.15",

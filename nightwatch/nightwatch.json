@@ -5,7 +5,7 @@
   "page_objects_path": "",
   "custom_assertions_path": "",
   "globals_path": "",
-  "live_output": false,
+  "live_output": true,
   "parallel_process_delay": 10,
   "disable_colors": false,
   "test_workers": false,
