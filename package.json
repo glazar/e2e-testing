@@ -1,0 +1,16 @@
+{
+  "name": "e2e-testing",
+  "version": "0.1.0",
+  "description": "End-to-End Testing with Nightwatch and Cucumber",
+  "devDependencies": {},
+  "scripts": {
+    "selenium-install": "node_modules/.bin/selenium-standalone install",
+    "selenium": "node_modules/.bin/selenium-standalone start",
+    "nightwatch-chrome": "node_modules/.bin/nightwatch --config ./nightwatch/nightwatch.conf.js",
+    "nightwatch-firefox": "node_modules/.bin/nightwatch --config ./nightwatch/nightwatch.conf.js --env firefox"
+  },
+  "dependencies": {
+    "nightwatch": "^0.9.15",
+    "selenium-standalone": "^6.4.1"
+  }
+}

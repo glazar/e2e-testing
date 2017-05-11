@@ -1,0 +1,52 @@
+{
+  "src_folders": ["./nightwatch/tests"],
+  "output_folder": "./nightwatch/reports",
+  "custom_commands_path": "",
+  "page_objects_path": "",
+  "custom_assertions_path": "",
+  "globals_path": "",
+  "live_output": false,
+  "parallel_process_delay": 10,
+  "disable_colors": false,
+  "test_workers": false,
+  "selenium": {
+    "start_process": true,
+    "server_path": "./node_modules/selenium-standalone/.selenium/selenium-server/3.4.0-server.jar",
+    "log_path": false,
+    "host": "127.0.0.1",
+    "port": 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/selenium-standalone/.selenium/chromedriver/2.29-x64-chromedriver",
+      "webdriver.gecko.driver": "./node_modules/selenium-standalone/.selenium/geckodriver/0.16.0-x64-geckodriver"
+    }
+  },
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost",
+      "selenium_host": "127.0.0.1",
+      "selenium_port": 4444,
+      "silent": true,
+      "disable_colors": false,
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "on_error": false,
+        "path": "./nightwatch/reports/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      },
+      "use_xpath": false,
+      "skip_testcases_on_fail": false
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    }
+  }
+}
