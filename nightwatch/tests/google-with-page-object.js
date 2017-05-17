@@ -17,6 +17,8 @@ module.exports = {
 
     google
       .navigate()
+      .assert.title('Google')
+      .assert.visible('@searchBar')
       .setValue('@searchBar', 'nightwatch')
       .submit();
 
