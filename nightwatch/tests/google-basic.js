@@ -1,4 +1,6 @@
 module.exports = {
+  '@tags': ['basic'],
+
   'Demo test Google - basic' : (client) => {
     client
       .url('http://www.google.com')
@@ -7,8 +9,7 @@ module.exports = {
       .waitForElementVisible('button[name=btnG]', 1000)
       .click('button[name=btnG]')
       .pause(1000)
-      .assert.containsText('#main', 'Night Watch')
-      .end();
+      .assert.containsText('#main', 'Night Watch');
   },
 
   'Demo test Google - expect' : (client) => {
@@ -30,7 +31,9 @@ module.exports = {
 
     // expect element <#lst-ib> to be visible
     client.expect.element('#lst-ib').to.be.visible;
+  },
 
+  after : (client) => {
     client.end();
   }
 };

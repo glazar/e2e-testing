@@ -1,4 +1,6 @@
 module.exports = {
+  '@tags': ['pageObject'],
+
   'Demo test Google - page object' : (client) => {
     const google = client.page.google();
 
@@ -8,8 +10,6 @@ module.exports = {
       .assert.visible('@searchBar')
       .setValue('@searchBar', 'nightwatch')
       .click('@submit');
-
-    client.end();
   },
 
   'Demo test Google - page object command' : (client) => {
@@ -21,7 +21,9 @@ module.exports = {
       .assert.visible('@searchBar')
       .setValue('@searchBar', 'nightwatch')
       .submit();
+  },
 
+  after : (client) => {
     client.end();
   }
 };
