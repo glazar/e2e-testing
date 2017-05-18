@@ -9,7 +9,7 @@
     "nightwatch-chrome": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js",
     "nightwatch-firefox": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e firefox",
     "nightwatch-chrome-firefox": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e default,firefox",
-    "cucumber-chrome": "node_modules/.bin/cucumber-js -p chrome",
+    "cucumber-chrome": "node_modules/.bin/cucumber-js",
     "cucumber-firefox": "node_modules/.bin/cucumber-js -p firefox"
   },
   "dependencies": {
