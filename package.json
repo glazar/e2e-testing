@@ -10,13 +10,17 @@
     "nightwatch-firefox": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e firefox",
     "nightwatch-chrome-firefox": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e default,firefox",
     "cucumber-chrome": "node_modules/.bin/cucumber-js",
-    "cucumber-firefox": "node_modules/.bin/cucumber-js -p firefox"
+    "cucumber-firefox": "node_modules/.bin/cucumber-js -p firefox",
+    "nightwatch-cucumber-chrome": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js",
+    "nightwatch-cucumber-firefox": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js -e firefox",
+    "nightwatch-cucumber-chrome-firefox": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js -e default,firefox"
   },
   "dependencies": {
     "chromedriver": "^2.29.0",
     "cucumber": "^2.1.0",
     "geckodriver": "^1.6.1",
     "nightwatch": "^0.9.15",
+    "nightwatch-cucumber": "^7.1.6",
     "selenium-standalone": "^6.4.1",
     "selenium-webdriver": "^3.4.0"
   }
