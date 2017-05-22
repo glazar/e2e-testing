@@ -6,6 +6,6 @@ const common = [
 ].join(' ');
 
 module.exports = {
-  default: `${common} --require cucumber/support/chrome-world.js`,
+  chrome: `${common} --require cucumber/support/chrome-world.js`,
   firefox: `${common} --require cucumber/support/firefox-world.js`,
 };

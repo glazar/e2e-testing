@@ -15,6 +15,6 @@ defineSupportCode(function ({Given, When, Then}) {
   Then(/^I should see "(.*?)"$/, function (text) {
     const xpath = "//*[contains(text(),'" + text + "')]";
     const condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
-    return this.driver.wait(condition, 5000);
+    return this.driver.wait(condition, 15000);
   });
 });

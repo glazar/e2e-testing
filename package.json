@@ -6,14 +6,14 @@
   "scripts": {
     "selenium-install": "node_modules/.bin/selenium-standalone install",
     "selenium": "node_modules/.bin/selenium-standalone start",
-    "nightwatch-chrome": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js",
+    "nightwatch-chrome": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e chrome",
     "nightwatch-firefox": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e firefox",
-    "nightwatch-chrome-firefox": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e default,firefox",
-    "cucumber-chrome": "node_modules/.bin/cucumber-js",
+    "nightwatch-chrome-firefox": "node_modules/.bin/nightwatch -c ./nightwatch.conf.js -e chrome,firefox",
+    "cucumber-chrome": "node_modules/.bin/cucumber-js -p chrome",
     "cucumber-firefox": "node_modules/.bin/cucumber-js -p firefox",
-    "nightwatch-cucumber-chrome": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js",
+    "nightwatch-cucumber-chrome": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js -e chrome",
     "nightwatch-cucumber-firefox": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js -e firefox",
-    "nightwatch-cucumber-chrome-firefox": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js -e default,firefox"
+    "nightwatch-cucumber-chrome-firefox": "node_modules/.bin/nightwatch -c ./nightwatch-cucumber.conf.js -e chrome,firefox"
   },
   "dependencies": {
     "chromedriver": "^2.29.0",

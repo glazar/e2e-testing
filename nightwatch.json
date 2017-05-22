@@ -33,13 +33,15 @@
         "on_error": false,
         "path": "./nightwatch/reports/screenshots"
       },
+      "use_xpath": false,
+      "skip_testcases_on_fail": false
+    },
+    "chrome": {
       "desiredCapabilities": {
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
-      },
-      "use_xpath": false,
-      "skip_testcases_on_fail": false
+      }
     },
     "firefox": {
       "desiredCapabilities": {
