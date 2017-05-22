@@ -1,5 +1,6 @@
 require('nightwatch-cucumber')({
   cucumberArgs: [
+    '--require', 'nightwatch-cucumber/support/event-handlers.js',
     '--require', 'nightwatch-cucumber/features/step-definitions',
     '--format', 'pretty',
     '--format', 'json:nightwatch-cucumber/reports/cucumber.json',
@@ -13,6 +14,7 @@ module.exports = (function(settings) {
   //  "enabled": true,
   //  "workers": "auto"
   //};
+  settings.test_settings.default.screenshots.path = "./nightwatch-cucumber/reports/screenshots";
   settings.src_folders = null;
   settings.output_folder =  "./nightwatch-cucumber/reports";
   settings.custom_commands_path = "./nightwatch-cucumber/commands";

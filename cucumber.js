@@ -1,5 +1,6 @@
 const common = [
   '--require', 'cucumber/support/hooks.js',
+  '--require', 'cucumber/support/event-handlers.js',
   '--require', 'cucumber/features/step-definitions',
   '--format', 'json:cucumber/reports/cucumber.json',
   'cucumber/features'
