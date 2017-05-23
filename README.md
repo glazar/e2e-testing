@@ -32,7 +32,7 @@ $ yarn selenium-install
 
 ### Step 3
 
-Try existing scrips
+Try existing scripts
 
 ```
 $ npm run nightwatch-chrome
@@ -41,8 +41,8 @@ $ npm run nightwatch-chrome-firefox
 $ npm run cucumber-chrome
 $ npm run cucumber-firefox
 $ npm run nightwatch-cucumber-chrome
-$ npm run cucumber-firefox
-$ npm run cucumber-chrome-firefox
+$ npm run nightwatch-cucumber-firefox
+$ npm run nightwatch-cucumber-chrome-firefox
 ```
 or shorter
 
@@ -53,7 +53,25 @@ $ yarn nightwatch-chrome-firefox
 $ yarn cucumber-chrome
 $ yarn cucumber-firefox
 $ yarn nightwatch-cucumber-chrome
-$ yarn cucumber-firefox
-$ yarn cucumber-chrome-firefox
+$ yarn nightwatch-cucumber-firefox
+$ yarn nightwatch-cucumber-chrome-firefox
 ```
 
+### Tips
+
+Edit *.conf.js files to allow for:
+- parallel runs
+- manual start of selenium server
+
+
+Manually start selenium (if desired)
+
+```
+$ npm run selenium
+```
+
+or shorter
+
+```
+$ yarn selenium
+```
