@@ -1,4 +1,6 @@
 module.exports = {
+  '@tags': ['basic'],
+
   'Demo test Google - basic' : (client) => {
     client
       .url('http://www.google.com')
