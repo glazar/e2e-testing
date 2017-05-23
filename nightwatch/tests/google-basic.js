@@ -1,6 +1,4 @@
 module.exports = {
-  '@tags': ['basic'],
-
   'Demo test Google - basic' : (client) => {
     client
       .url('http://www.google.com')
@@ -10,8 +8,6 @@ module.exports = {
       .click('button[name=btnG]')
       .pause(2000)
       .assert.containsText('#main', 'Night Watch');
-
-    client.end();
   },
 
   'Demo test Google - expect' : (client) => {
@@ -24,7 +20,9 @@ module.exports = {
     client.expect.element('body').to.have.attribute('class').which.contains('vasq');
     client.expect.element('#lst-ib').to.be.an('input');
     client.expect.element('#lst-ib').to.be.visible;
+  },
 
+  after : (client) => {
     client.end();
   }
 };
