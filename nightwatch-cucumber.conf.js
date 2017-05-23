@@ -1,5 +1,6 @@
 require('nightwatch-cucumber')({
   cucumberArgs: [
+    '--require', 'timeout.js',
     '--require', 'nightwatch-cucumber/support/event-handlers.js',
     '--require', 'nightwatch-cucumber/features/step-definitions',
     '--format', 'pretty',

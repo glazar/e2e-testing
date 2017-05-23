@@ -1,4 +1,5 @@
 const common = [
+  '--require', 'timeout.js',
   '--require', 'cucumber/support/hooks.js',
   '--require', 'cucumber/support/event-handlers.js',
   '--require', 'cucumber/features/step-definitions',
