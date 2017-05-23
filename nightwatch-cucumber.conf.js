@@ -15,10 +15,10 @@ module.exports = (function(settings) {
   //  "workers": "auto"
   //};
   settings.test_settings.default.screenshots.path = "./nightwatch-cucumber/reports/screenshots";
-  settings.src_folders = null;
   settings.output_folder =  "./nightwatch-cucumber/reports";
-  settings.custom_commands_path = "./nightwatch-cucumber/commands";
-  settings.page_objects_path = "./nightwatch-cucumber/page-objects";
+  settings.src_folders = null;
+  settings.custom_commands_path = null;
+  settings.page_objects_path = null;
 
   return settings;
 })(require('./nightwatch.json'));
