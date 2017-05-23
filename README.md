@@ -12,6 +12,7 @@ $ npm install
 
 or shorter
 
+
 ```
 $ yarn
 ```
@@ -44,7 +45,9 @@ $ npm run nightwatch-cucumber-chrome
 $ npm run nightwatch-cucumber-firefox
 $ npm run nightwatch-cucumber-chrome-firefox
 ```
+
 or shorter
+
 
 ```
 $ yarn nightwatch-chrome
@@ -59,12 +62,11 @@ $ yarn nightwatch-cucumber-chrome-firefox
 
 ### Tips
 
-Edit *.conf.js files to allow for:
-- parallel runs
+Edit *.conf.js files (look out for commented out lines) to allow for
+- parallel runs of tests/features
 - manual start of selenium server
 
-
-Manually start selenium (if desired)
+Manually start selenium (if desired) can be done using
 
 ```
 $ npm run selenium
