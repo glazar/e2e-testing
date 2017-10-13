@@ -1,8 +1,20 @@
+const parseArgs = require('minimist');
+
+const args = parseArgs(process.argv.slice(2));
+
+const conditionalArgs = [];
+
+if (args.coverage) {
+  conditionalArgs.push('--require', 'nightwatch-cucumber/coverage/hooks.js');
+  conditionalArgs.push('--tags', '@smoke or @regression or @deep or @analytics');
+}
+
 require('nightwatch-cucumber')({
   cucumberArgs: [
     '--require', 'timeout.js',
     '--require', 'nightwatch-cucumber/support/event-handlers.js',
     '--require', 'nightwatch-cucumber/features/step-definitions',
+    ...conditionalArgs,
     '--format', 'pretty',
     '--format', 'json:nightwatch-cucumber/reports/cucumber.json',
     'nightwatch-cucumber/features'

@@ -1,0 +1,12 @@
+{
+  "name": "docker-coverage",
+  "version": "010.0",
+  "description": "Node.js Coverage Server",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "istanbul-middleware": "^0.2.2"
+  }
+}
