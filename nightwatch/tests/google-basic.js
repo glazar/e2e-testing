@@ -4,10 +4,9 @@ module.exports = {
   'Demo test Google - basic' : (client) => {
     client
       .url('http://www.google.com')
-      .waitForElementVisible('body', 1000)
+      .waitForElementVisible('body', 2000)
       .setValue('input[type=text]', 'nightwatch')
-      .waitForElementVisible('button[name=btnG]', 1000)
-      .click('button[name=btnG]')
+      .click('input[name=btnK]')
       .pause(2000)
       .assert.containsText('#main', 'Night Watch');
   },
@@ -15,7 +14,7 @@ module.exports = {
   'Demo test Google - expect' : (client) => {
     client
       .url('http://google.com')
-      .pause(1000);
+      .pause(2000);
 
     client.expect.element('body').to.be.present.before(1000);
     client.expect.element('#lst-ib').to.have.css('display');

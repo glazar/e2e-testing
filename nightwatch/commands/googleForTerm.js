@@ -12,5 +12,3 @@ function googleForTerm(term) {
 module.exports = {
   command: googleForTerm
 };
-
-//exports.command = googleForTerm;
